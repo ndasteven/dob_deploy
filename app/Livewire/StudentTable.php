@@ -56,7 +56,9 @@ final class studentTable extends PowerGridComponent
             ]),
             Header::make()
                     ->showToggleColumns()
-                    ->showSearchInput(),
+                    ->showSearchInput()
+                    ,
+                    
       
                                         
             Footer::make()

@@ -198,7 +198,7 @@
   @script
   <script>
   document.addEventListener('livewire:initialized', () => {
-
+   
     //fonction qui permet le select de tom select en ecoutant getEcole() dans studentIndex.php lors de la saisie
     function searchEcoleSelect(id){
       return new TomSelect(id,{

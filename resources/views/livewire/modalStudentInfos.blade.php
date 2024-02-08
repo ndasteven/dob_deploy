@@ -1,3 +1,4 @@
+
 <div class="modal fade" id="modalStudentInfos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" wire:ignore.self> 
    
   <div class="modal-dialog modal-fullscreen">
@@ -64,7 +65,7 @@
                                   <h6 style="text-align: center; color:blue">Décisions élèves</h6>
                                   <hr>
                                   @if ($eleveInfo)
-                                  <table class="table table-striped"">
+                                  <table class="table table-striped">
                                     <thead>
                                       <tr>
                                         <th scope="col">information</th>
@@ -117,7 +118,7 @@
                                       </tr>
                                     
                                   @empty
-                                    <center></center>
+                                    <center>Pas de décisons</center>
                                   @endforelse 
                                   </tbody>
                                 </table>
@@ -430,7 +431,7 @@
       )
      
     })
-    @this.on('detachPrimary', function(){
+    @this.on('mise_a_jour', function(){ //permet de rafraichir les modification apporter
             $('.update').click()
           })
     })
